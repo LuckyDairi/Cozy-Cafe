@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Cafe - Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #f0e7d4;
+            margin: 0;
+            background: url('https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding-top: 80px;
+            padding-bottom: 60px;
+        }
+
+        header {
+            background-color: rgba(60, 40, 30, 0.9);
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3em;
+            color: #f4e1c6;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #f4e1c6;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.3em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd1a9;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4em;
+            color: #f0e7d4;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            color: #f8f4e6;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            line-height: 1.6em;
+        }
+
+        .hero .button {
+            background-color: #7f5740;
+            color: #f4e1c6;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero .button:hover {
+            background-color: #6a4730;
+            transform: scale(1.05);
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 0;
+            background: rgba(60, 40, 30, 0.8);
+            color: #f4e1c6;
+        }
+
+        .feature-item {
+            width: 30%;
+            text-align: center;
+        }
+
+        .feature-item h3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .feature-item p {
+            font-size: 1.1em;
+        }
+
+        footer {
+            background-color: rgba(60, 40, 30, 0.9);
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #f4e1c6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cozy Cafe</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contacts.html">Contacts</a>
+            <a href="menu.html">Menu</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>FIND YOUR MOMENT OF PEACE IN EVERY CUP</h2>
+        <p>Let the aroma of freshly brewed coffee welcome you to a space where every sip is a small escape</p>
+        <button class="button" onclick="window.location.href='menu.html'">Take Home the Blend</button>
+    </div>
+
+    <div class="features">
+        <div class="feature-item">
+            <h3>Cozy Ambiance</h3>
+            <p>Experience a warm, inviting atmosphere with rustic decor that transports you to a countryside cottage.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Artisan Coffee</h3>
+            <p>We serve handpicked, locally roasted coffee beans brewed to perfection for a delightful coffee experience.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Homemade Treats</h3>
+            <p>Our homemade pastries and desserts are crafted with love, using the finest ingredients for a fresh, delicious taste.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Cozy Cafe | Your Warm & Cozy Retreat</p>
+    </footer>
+</body>
+</html>

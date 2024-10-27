@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Coffee Place</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #f0e7d4;
+            margin: 0;
+            background: url('https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding-top: 80px;
+        }
+
+        header {
+            background-color: rgba(60, 40, 30, 0.9);
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+            color: #f4e1c6;
+            margin: 0;
+        }
+
+        nav a {
+            color: #f4e1c6;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd1a9;
+        }
+
+        .view-cart {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background-color: #8b5e34;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+
+        .view-cart:hover {
+            background-color: #8e4a2e;
+        }
+
+        .menu-container {
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 15px;
+        }
+
+        .menu-item {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 8px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .menu-item h3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.6em;
+            color: #b55f3b;
+            margin: 10px 0;
+        }
+
+        .menu-item p {
+            font-size: 1em;
+            color: #333;
+            margin: 8px 0;
+        }
+
+        .add-to-cart-btn {
+            background-color: #b55f3b;
+            color: #f4e1c6;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #8e4a2e;
+        }
+
+        footer {
+            background-color: rgba(60, 40, 30, 0.9);
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #f4e1c6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cozy Cafe</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contacts.html">Contacts</a>
+            <a href="menu.html">Menu</a>
+        </nav>
+    </header>
+
+    <a href="cart.html" class="view-cart">View Cart</a>
+
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="https://th.bing.com/th/id/OIP.ueTivOeGgF3bLL1FjZLOnAHaJP?rs=1&pid=ImgDetMain" alt="Latte">
+            <h3>Latte</h3>
+            <p>₱252.00</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://th.bing.com/th/id/OIP.sORUCLQs6IFavbrcEWRPgAHaE8?rs=1&pid=ImgDetMain" alt="Cappuccino">
+            <h3>Cappuccino</h3>
+            <p>₱224.00</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://th.bing.com/th/id/OIP.NpENdSbSFVOd0VnXywq49AAAAA?w=320&h=320&rs=1&pid=ImgDetMain" alt="Espresso">
+            <h3>Espresso</h3>
+            <p>₱168.00</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://butterboyph.com/cdn/shop/files/202-11-16-0401_a4c88e1a-d156-4b77-9c02-c7e5b78def1e_503x.jpg?v=1707199316" alt="Croissant">
+            <h3>Croissant</h3>
+            <p>₱140.00</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://cdn.buttercms.com/AB7ud4YSE6nmOX0iGlgA" alt="Americano">
+            <h3>Americano</h3>
+            <p>₱196.00</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://th.bing.com/th/id/OIP.nkm9CoUTGG8DuSGqxtchOwAAAA?rs=1&pid=ImgDetMain" alt="Blueberry Muffin">
+            <h3>Blueberry Muffin</h3>
+            <p>₱112.00</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://th.bing.com/th/id/OIP.0K1WmatqwU9JR7YotTwVLwAAAA?rs=1&pid=ImgDetMain" alt="Green Tea">
+            <h3>Green Tea</h3>
+            <p>₱154.00</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://th.bing.com/th/id/OIP.RF-npsXIp5x4jIvpPilMsgHaLH?rs=1&pid=ImgDetMain" alt="Chocolate Cake">
+            <h3>Chocolate Cake</h3>
+            <p>₱280.00</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://assets.afcdn.com/recipe/20200318/109118_w1024h768c1cx1706cy2560.jpg" alt="Macaron">
+            <h3>Macaron</h3>
+            <p>₱84.00</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://th.bing.com/th/id/OIP.1m-CDnwRPoQQMy4Z44Wq5QHaHa?rs=1&pid=ImgDetMain" alt="Strawberry Cheesecake">
+            <h3>Strawberry Cheesecake</h3>
+            <p>₱266.00
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Cozy Cafe | Enjoy the Little Things</p>
+    </footer>
+
+    <script>
+        const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Item added to cart!');
+            });
+        });
+    </script>
+</body>
+</html>

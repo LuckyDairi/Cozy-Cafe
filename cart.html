@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Cafe - Cart</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #f0e7d4;
+            margin: 0;
+            background: url('https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47492.jpg?w=900&t=st=1667638591~exp=1667639191~hmac=c8d89a0d4a97f3d62f9ab3f98e693913f843d3fc5f2bc3f65301ccedeaa09aba') no-repeat center center fixed;
+            background-size: cover;
+            padding-top: 160px;
+            padding-bottom: 60px;
+        }
+
+        header {
+            background-color: rgba(60, 40, 30, 0.9);
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3em;
+            color: #f4e1c6;
+            margin: 0;
+        }
+
+        nav a {
+            color: #f4e1c6;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.3em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd1a9;
+        }
+
+        .cart-section {
+            max-width: 800px;
+            margin: auto;
+            padding: 40px;
+            background: rgba(60, 40, 30, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .cart-section h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3em;
+            text-align: center;
+            color: #f4e1c6;
+            margin-bottom: 20px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: rgba(240, 224, 208, 0.9);
+            border-radius: 8px;
+        }
+
+        .cart-item h3 {
+            font-size: 1.5em;
+            color: #603e2e;
+        }
+
+        .cart-item button {
+            background-color: #d4a373;
+            border: none;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .checkout-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .checkout-link a {
+            color: #ffd1a9;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        footer {
+            background-color: rgba(60, 40, 30, 0.9);
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #f4e1c6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cozy Cafe</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contacts.html">Contacts</a>
+            <a href="menu.html">Menu</a>
+        </nav>
+    </header>
+
+    <div class="cart-section">
+        <h2>Your Cart</h2>
+        
+        <div class="cart-item">
+            <h3>Espresso - $3.00</h3>
+            <button>Remove</button>
+        </div>
+        <div class="cart-item">
+            <h3>Latte - $4.50</h3>
+            <button>Remove</button>
+        </div>
+    </div>
+
+    <div class="checkout-link">
+        <a href="thankyou.html">Proceed to Checkout</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Cozy Cafe | Enjoy the Little Things</p>
+    </footer>
+</body>
+</html>

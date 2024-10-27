@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Cozy Cafe</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #f0e7d4;
+            margin: 0;
+            background: url('https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding-top: 160px;
+            padding-bottom: 60px;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgba(60, 40, 30, 0.9);
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3em;
+            color: #f4e1c6;
+            margin: 0;
+        }
+
+        .thank-you-container {
+            background: rgba(60, 40, 30, 0.8);
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .thank-you-container h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3em;
+            color: #f4e1c6;
+            margin-bottom: 20px;
+        }
+
+        .thank-you-message {
+            font-size: 1.5em;
+            color: #e7c6a0;
+            margin-bottom: 20px;
+        }
+
+        .receipt {
+            background: rgba(255, 255, 255, 0.9);
+            color: #000;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .receipt h3 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #b55f3b; 
+        }
+
+        footer {
+            background-color: rgba(60, 40, 30, 0.9);
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #f4e1c6;
+        }
+
+        .return-link {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #ffd1a9;
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+
+        .return-link:hover {
+            color: #f4e1c6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cozy Cafe</h1>
+    </header>
+
+    <div class="thank-you-container">
+        <h2>Thank You!</h2>
+        <p class="thank-you-message">Your order has been successfully placed!</p>
+        <div class="receipt">
+            <h3>Your Receipt</h3>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Address:</strong> 123 Cozy Lane, Cafe City, CO 12345</p>
+            <p><strong>Contact Number:</strong> (123) 456-7890</p>
+            <p><strong>Items Ordered:</strong></p>
+            <ul>
+                <li>Espresso - $3.00</li>
+                <li>Latte - $4.50</li>
+                <li>Croissant - $2.00</li>
+            </ul>
+            <p><strong>Total:</strong> $9.50</p>
+        </div>
+        <a class="return-link" href="menu.html">Return to Menu</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Cozy Cafe | Enjoy the Little Things</p>
+    </footer>
+</body>
+</html>
